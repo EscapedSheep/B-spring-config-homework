@@ -11,33 +11,6 @@ public class MailConfig {
     private String hostname;
     private int port;
     private String from;
-    private List<String> defaultRecipients;
-    private Map<String, String> additionalHeaders;
-    private Credentials credentials;
-
-    public List<String> getDefaultRecipients() {
-        return defaultRecipients;
-    }
-
-    public void setDefaultRecipients(List<String> defaultRecipients) {
-        this.defaultRecipients = defaultRecipients;
-    }
-
-    public Map<String, String> getAdditionalHeaders() {
-        return additionalHeaders;
-    }
-
-    public void setAdditionalHeaders(Map<String, String> additionalHeaders) {
-        this.additionalHeaders = additionalHeaders;
-    }
-
-    public Credentials getCredentials() {
-        return credentials;
-    }
-
-    public void setCredentials(Credentials credentials) {
-        this.credentials = credentials;
-    }
 
     public String getHostname() {
         return hostname;
@@ -79,33 +52,4 @@ public class MailConfig {
                 '}';
     }
 
-    public static class Credentials {
-        private String username;
-        private String password;
-        private String authMethod;
-
-        public String getUsername() {
-            return username;
-        }
-
-        public void setUsername(String username) {
-            this.username = username;
-        }
-
-        public String getPassword() {
-            return password;
-        }
-
-        public void setPassword(String password) {
-            this.password = password;
-        }
-
-        public String getAuthMethod() {
-            return authMethod;
-        }
-
-        public void setAuthMethod(String authMethod) {
-            this.authMethod = authMethod;
-        }
-    }
 }
